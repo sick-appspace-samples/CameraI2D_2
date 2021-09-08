@@ -1,0 +1,11 @@
+{
+  "name": "CameraI2D_2",
+  "version": "1.0.0",
+  "description": "Generated",
+  "components": [
+    "@sick-davinci/basic-elements"
+  ],
+  "dependencies": {
+    "@sick-davinci/basic-elements": "^5.2.1"
+  }
+}
