@@ -20,7 +20,6 @@ local viewer = View.create('viewer2d')
 
 --Start of Function and Event Scope---------------------------------------------
 
---@main()
 local function main()
   -- Connect to camera and start image acquisition
   local isConnected = cam1:connect()
@@ -34,7 +33,8 @@ end
 --The registration is part of the global scope which runs once after startup
 Script.register('Engine.OnStarted', main)
 
---@handleOnNewImage(image:Image,sensordata:SensorData)
+---@param image Image
+---@param sensordataSensorData
 local function handleOnNewImage(image, sensordata)
   -- View downsampled image in the 2D viewer
   local downsampledImage = image:resizeScale(0.25)
